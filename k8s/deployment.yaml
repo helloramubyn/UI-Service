@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: i27-ui
-          image: ${IMAGE}   # substituted by envsubst in CI, e.g. devopswithcloudhub/i27helpdesk-ui:dev-<git-sha>
+          image: bynramu/i27-helpdesk-ui:v1   # substituted by envsubst in CI, e.g. devopswithcloudhub/i27helpdesk-ui:dev-<git-sha>
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
